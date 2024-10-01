@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22ieUgh%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20version%3D%221.1%22%20aria-hidden%3D%22false%22%20style%3D%22flex-shrink%3A%200%3B%22%3E%3Cdesc%20lang%3D%22en-US%22%3EA%20plus%20sign%3C%2Fdesc%3E%3Cpath%20d%3D%22M21.8%2010.5h-8.3V2.2h-3v8.3H2.2v3h8.3v8.3h3v-8.3h8.3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E">
+    <script src="https://kit.fontawesome.com/b3351de85d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <a href="landing.html">
+                    <div class="circle">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                </a>
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="What do you want to play?">
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <div id="songList"></div>
+            <img src="media/music-bg.jpg" alt="Music Background Image" class="song-img">
+            <h1>Slow Motion</h1>
+            <p>Yuhi Mic</p>
+            <audio id="song">
+                <source src="media/slow-motion.mp3" type="audio/mpeg">
+            </audio>
+            <div class="progress-volume-container">
+                <input type="range" value="0" id="progress">
+                <i id="volumeIcon" class="fa-solid fa-volume-high"></i>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+            </div>            
+            <div class="controls">
+                <div onclick="skipBackward()"><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div onclick="skipForward()"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

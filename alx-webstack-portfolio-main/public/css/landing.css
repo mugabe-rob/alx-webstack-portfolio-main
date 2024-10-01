@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.landing-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-content {
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f53192;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+marquee {
+    font-size: 1.2rem;
+    margin-top: 40px;
+    color: #fff;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #2e07dc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f53192;
+}
+
+/* Login Icon Styles */
+.login-icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 24px;
+}
+
+.login-icon a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-icon a:hover {
+    color: #f53192; /* Change color on hover */
+}
+
+.login-icon i {
+    transition: transform 0.3s ease;
+}
+
+.login-icon a:hover i {
+    transform: scale(1.1); /* Slight zoom on hover */
+}

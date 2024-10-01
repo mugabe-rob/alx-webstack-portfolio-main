@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Music Player</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <script src="https://kit.fontawesome.com/b3351de85d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="login-icon">
+        <a href="login.html" title="Login"><i class="fa-solid fa-user"></i></a>
+    </div>
+
+    <div class="landing-container">
+        <div class="landing-content">
+            <h1>Welcome to the Music Player</h1>
+            <p>Experience the best music streaming platform with seamless playback and a user-friendly interface.</p>
+            <button id="redirectBtn">Start Listening</button> <!-- Button to redirect to index.html -->
+            <marquee behavior="scroll" direction="left">Click <u>Start Listening</u> to Enjoy Good Music Only <i class="fa-solid fa-music"></i></marquee>
+        </div>
+    </div>
+
+    <script>
+        // Redirect to the index.html when the button is clicked
+        document.getElementById('redirectBtn').addEventListener('click', function() {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
